@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background: #BE93C5;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #7BC6CC, #BE93C5);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #7BC6CC, #BE93C5); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+           
+        }
+        table,tr,td,th{
+            border: 1px solid black;
+        }
+
+        #userTable {
+            
+            font-size: 20px;
+            color: rgb(155, 50, 150);
+            width: 94px;
+        }
+
+        .save {
+            border-radius: 30%;
+            font-size: 20px;
+            width: 80px;
+            background-color: rgb(177, 128, 196);
+
+
+        }
+        .add{
+            font-size: 20px;
+            border-radius: 30%;
+            height: 30px;
+            width: 110px;
+            background-color: rgb(177, 128, 196);
+        }
+
+        .table_div {
+            display: flex;
+            justify-content: center;
+            height: 100px;
+            text-align: center;
+            
+        }
+        #userTable{
+            text-align: center;
+        }
+
+        .modal {
+            display: none;
+            text-align: center;
+        }
+
+        .active {
+            display: block;
+        }
+        #userForm{
+            font-size: 20px;
+            color: purple;
+
+            
+        }
+        img{
+            width: 260px;
+            height: 200px;
+        }
+        .edit{
+            background-color: rgb(126, 165, 165);
+            
+        }
+        .delete{
+            background-color: rgb(126, 165, 165);
+        }
+        
+        
+    </style>
+</head>
+
+<body>
+    <button type="submit" class="add">Add</button>
+    
+    <div class="modal">
+        <form id="userForm">
+            <label for="image">Image</label>
+            <input type="text" id="image"><br><br>
+
+            <label for="film">Film</label>
+            <input type="text" id="film"><br><br>
+
+            <label for="rejissor">Rejissor</label>
+            <input type="text" id="rejissor"><br><br>
+
+            <label for="category">Category</label>
+            <select name="" id="category">
+                <option value="dram">Dram</option>
+                <option value="romantic">Romantic</option>
+                <option value="fantastic">Fantastic</option>
+                <option value="dedective">Dedective</option>
+            </select><br><br>
+
+            <label for="imdb">Film imdb</label>
+            <input type="imdb" id="film_imdb"><br><br>
+
+
+            <button class="save">Save</button><br><br>
+
+
+        </form>
+    </div>
+    <!--  -->
+    <div id="table_div">
+        <table id="userTable" border="2">
+            <tbody id="tbody">
+                <tr>
+                    <th>Image</th>
+                    <th>Film</th>
+                    <th>Rejissor</th>
+                    <th>Category</th>
+                    <th>Film imdb</th>
+                    <th>Edit</th>
+                    <th>X</th>
+                    
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <script src="./script.js"></script>
+
+</body>
+
+</html>
